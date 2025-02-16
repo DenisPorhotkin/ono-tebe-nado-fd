@@ -141,7 +141,7 @@
 /*контейнер для подзаголовка и кнопки*/
 .cover__description {
     display: flex;
-    align-items: center; 
+    align-items: center;
 }
 
 /*текст подзаголовка*/
