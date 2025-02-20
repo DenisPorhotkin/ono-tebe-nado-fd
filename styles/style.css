@@ -46,6 +46,10 @@
 /*ссылка неактивная*/
 .header__link {
     text-decoration-line: underline;
+}
+
+/*общие свойства для "ссылок", подчёркивание под текстом*/
+.general__options_links {
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
 }
@@ -65,14 +69,13 @@
 }
 
 .address {
-    display: block;
+    display: flex;
     justify-self: end;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 1.35;
     min-width: 240px;
-    list-style: none;
 }
 
 .address .header__address {
@@ -209,13 +212,6 @@
     gap: 25px;
 }
 
-/*ссылка неактивная заголовка карточек*/
-.card-link {
-    text-decoration-line: underline;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-}
-
 /*карточка*/
 .card {
     min-height: 596px;
@@ -233,12 +229,8 @@
 
 /*ссылка обрамляющая карточку*/
 .card__lots__link {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
 }
 
 /*классы для фона каждой из карточек*/
@@ -264,6 +256,9 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 1.2;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 }
 
 /* текст карточки*/
@@ -350,11 +345,13 @@
     padding: 180px 50px 82px 50px;
 }
 
+
 .footer__adress {
-    display: flex;
-    justify-self: start;
+    list-style: none;
+    width: 100%;    
     min-width: 250px;
 }
+
 /*блок навигации по списку ссылок*/
 .footer__menu {
     display: flex;
@@ -379,8 +376,6 @@
 /*неактивная ссылка меню в адресе в хидер и футер*/
 .adress__menu-link {
     text-decoration-line: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
 }
 
 /*активная ссылка меню (без подчёркивания)*/
@@ -391,8 +386,6 @@
 /*неактивная ссылка меню в меню в футер*/
 .footer__menu-link {
     text-decoration-line: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 1px;
 }
 
 /*список ссылок на социальные сети*/
